@@ -1,0 +1,19 @@
+<html>
+
+<body>
+
+<div>
+	<h1 style="color: font-weight: bold; text-align:center; background-color: rgb(216,191,216)"> Add a new Area</h1>
+<form action="{{url_for('newArea') }}" method = 'POST'>
+	
+	<input type='text' name='name' placeholder='Type new area name'>
+	<input type='submit' value='Add'>
+</form>
+<a href="{{url_for('allAreas') }}">Cancel</a>
+<br>
+
+</div>
+
+</body>
+
+</html>

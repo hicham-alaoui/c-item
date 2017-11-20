@@ -1,0 +1,38 @@
+<html>
+
+<body>
+
+
+{% for i in a %}
+
+<p> Yo are searching properties in the <b>{{i.name}}</b> area</p>
+
+{% endfor %}
+
+
+
+
+{% for i in properties %}
+
+<div>
+<p>Address:{{i.name}}</p>
+<p>Details:{{i.description}}</p>
+<p>City: {{i.city}}</p>
+<p>Price: {{i.price}}</p>
+
+
+<br>
+<a href='/area/{{i.id}}/catalogitem/new'>Create</a>
+<br>
+<a href='/area/{{i.id}}/catalogitem/{{i.id}}/edit'>Edit</a>
+<br>
+<a href='/area/{{i.id}}/catalogitem/{{i.id}}/delete'>Delete</a>
+
+</div>
+
+{% endfor %}
+<a href="{{url_for('allAreas') }}">All Areas</a>
+</body>
+
+</html>
+

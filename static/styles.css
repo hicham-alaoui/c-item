@@ -1,0 +1,10 @@
+body {
+	background-color: #B0E0E6;
+}
+
+.centered {
+	display: block;
+	margin-left: 50%;
+	margin-top: 50%;
+
+}

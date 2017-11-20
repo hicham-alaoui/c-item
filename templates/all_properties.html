@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<hr>
+<h1 style="text-align: center; background-color: beige">Current offers</h1><a href="{{url_for('allAreas') }}">All Areas</a><br><a href="{{url_for('newArea') }}">New Area</a><br>
+<a href="{{url_for('newArea') }}">Add New Area</a>
+<hr>
+<div>
+
+{% for i in properties %}
+<p>Adress:{{i.name}}</p>
+<p>Details:{{i.description}}</p>
+<p>City: {{i.city}}</p>
+<p>Price: {{i.price}}</p>
+<hr>
+</div>
+{% endfor %}
+</div>
+
+</body>
+
+</html>

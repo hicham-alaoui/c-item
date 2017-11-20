@@ -1,0 +1,32 @@
+<html>
+
+<body>
+	<hr>
+<h1 style="color: font-weight: bold; text-align:center; background-color: rgb(216,191,216)"> Property Areas</h1>
+<hr>
+<a href="{{url_for('newArea') }}">Add a new Area</a>
+<hr>
+
+<div>
+
+{% for i in area %}
+<hr>
+
+<a href="/area/{{i.id}}/">{{i.name}}</a>
+
+
+
+
+<br>
+<a href="/areas/{{i.id}}/edit">Edit</a>
+<a href="/areas/{{i.id}}/delete">Delete</a>
+
+<hr>
+</div>
+
+{% endfor %}
+</div>
+
+</body>
+
+</html>
